@@ -1,0 +1,10 @@
+h3 {
+   color: Navy;
+   text-decoration: underline;
+}
+
+table {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {background-color: Grey}
