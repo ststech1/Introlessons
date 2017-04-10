@@ -1,0 +1,32 @@
+h1 {
+    color: tomato; 
+}
+
+header {
+     background-color: steelblue; color: tomato;
+}
+
+footer {
+     background-color: steelblue; color: tomato;
+}
+
+ /* unvisited link */
+a {
+    color: tomato;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink; font-weight: bold;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}

@@ -6,11 +6,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+#carousel {
+        margin-top: 50px;
+}
+	
+.carousel {
+        height: 500px;
+}
+	
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-     width: 70%
+     width: 100%
 	 margin: auto;
-
 }
 h1 {
    font-family: "comic sans MS";
@@ -31,7 +38,6 @@ a:link {
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 
@@ -51,20 +57,48 @@ a:link {
 			   </div>
 			</div>	
    </header>
-   
-  <div class="container"> 
-     <div id="Carousel" class="carousel slide" data-ride="carousel">
+   <br><br>
+
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	 
      <ol class="carousel-indicators">
-       <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-	   <li data-target="#Carousel" data-slide-to="1"></li>
-	   <li data-target="#Carousel" data-slide-to="2"></li>
-	   <li data-target="#Carousel" data-slide-to="3"></li>
+       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	   <li data-target="#myCarousel" data-slide-to="1"></li>
+	   <li data-target="#myCarousel" data-slide-to="2"></li>
+	   <li data-target="#myCarousel" data-slide-to="3"></li>
      </ol>
-   
+  
+        <div class="carousel-inner" role="listbox">
+		
+           <div class="item active">
+           <img src="file:///C:/repos/introlessons/BOOTSTRAP/Lab3/map.jpg" width="460" height="345" class="center-block">
+             <div class="carousel-caption"><h3>New Location!</h3><p>Another great stop for pickle lovers!</p></div>
+		   </div>
+
+           <div class="item">
+           <img src="file:///C:/repos/introlessons/BOOTSTRAP/Lab3/pickle1.jpg" width="460" height="345" class="center-block">
+             <div class="carousel-caption"><h3>New Flavors!</h3><p>New seasonal menu's with custom fried pickles!</p></div>
+		   </div>
+		   
+    
+           <div class="item">
+           <img src="file:///C:/repos/introlessons/BOOTSTRAP/Lab3/pickle2.jpg" width="460" height="345" class="center-block">
+		     <div class="carousel-caption"><h3>Drink of the month!</h3><p>special pickle brew</p></div>
+		   </div>		   
+
+           <div class="item">
+           <img src="file:///C:/repos/introlessons/BOOTSTRAP/Lab3/pickle3.jpg" width="460" height="345" class="center-block">
+		     <div class="carousel-caption"><h3>Pickels!</h3><p>Can't get enough.</p></div>
+           </div>
+        </div>
+	        <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
      </div>
-  </div> 
-   
-   
+	 
   <div class="container-fluid">
     
      <hr>
@@ -91,6 +125,11 @@ a:link {
   <center><footer><h4>423 Pickle Street, Siracha, Nevada, 53215</h4><br>912-244-1984</footer></center>
   
   </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   </body>
   
   </html>
